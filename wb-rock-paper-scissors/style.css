@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+body {
+     background:linear-gradient(#1F3756, #141539);
+     margin-left: 150px;
+     margin-right: 150px;
+     margin-bottom: 1366px;
+     color: #fff;
+     font-family: "Barlow Semi Condensed" , sans-serif;
+     min-height: 940px;    
+     text-transform: uppercase;
+}
+
+h1 {
+     font-size: 40px;
+     margin: 0;
+     line-height: 0.9;
+     letter-spacing: 0.5px;
+     display : flex;
+     flex-direction: column;
+     
+}
+
+h4  {
+     flex-direction: column;
+     color: hsl(229, 64%, 46%);
+     margin: 0;
+     letter-spacing: 2px;
+     font-size: 24px;
+}
+
+.scoreBox{
+     padding: 20px;
+     margin: 20px;
+     border-width: 3px;
+     border-style: solid;
+     border-color: #606E85;
+     border-radius: 15px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.score-container-sqr {
+     background-color: #fff;
+     border-radius: 15px;
+     padding: 20px;
+     text-align:center;  
+}
+ 
+.score-num {
+     color: #3B4363;
+     font-size: 64px;
+     font-weight:700;
+     margin: 0;
+}
+
+/* PIEDRA PAPEL O TIJERA*/
+.game-container{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     height: 350px;
+     width:400px;
+     margin: 0 auto;
+     position: relative;
+}
+.game-container::before{
+     background-image: url("./images/bg-triangle.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     content: "";
+     position: absolute;
+     top: 20%;
+     left: 15%;
+     height: 70%;
+     width: 70%;
+     z-index: -1;
+}
+
+.btn-paper {
+     width:150px;
+     height:150px;
+     border-radius:50%;
+     margin: 0 25px;
+     box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
+     border: 10px solid hsl(230, 89%, 65%);
+     cursor: pointer;
+}
+
+.btn-scissorsle{
+     width:150px;
+     height:150px;
+     border-radius:50%;
+     margin: 0 25px;
+     box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
+     border: 10px solid hsl(40, 84%, 53%);
+     cursor: pointer;
+}
+
+.btn-rock{
+     width:150px;
+     height:150px;
+     border-radius:50%;
+     margin: 0 25px;
+     box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15);
+     border: 10px solid hsl(349, 70%, 56%);
+     cursor: pointer;
+} 
+
+/*RULES BUTTON*/
+.rules-btn {
+     border:2px solid #fff;
+     border-radius: 10px;
+     background-color:transparent;
+     color: #fff;
+     font-size: 20px;
+     font-family: inherit;
+     padding: 10px 25px;
+     position:fixed;
+     bottom:80px;
+     right:30px;
+     letter-spacing:2px;
+     text-transform:uppercase;
+ }
+
+.pop-up{
+     background: rgba(48, 48, 48, 0.5);
+     position:fixed;
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     visibility: visible;
+}
+.pop-up .show {
+     visibility:visible;
+}
+.pop-up-wrap{
+     background-color:#D9DDDC;
+     display: flex;
+     flex-direction: column;
+     padding: 15px;
+     border:2px solid #D9DDDC;
+     border-radius: 20px;
+     height: 40%;
+     max-height: 600px;
+     color: #3B4363;
+     margin: 0;
+     letter-spacing: 2px;
+     font-size: 24px;
+     position: relative;
+     transform: scale(0.6);
+     opacity: 1;
+     transition: 0.4s ease all;
+}
+.pop-up-wrap .show {
+     transform: scale(1);
+     opacity: 1;
+}
+#close{
+     position: absolute;
+     top: 40px;
+     right: 25px;
+}
+
+/*font-family: 'Barlow Semi Condensed', sans-serif;
+  <link href="https://fonts.google.com/specimen/Barlow+Semi+Condensed#standard-styles" rel="stylesheet">*/
+
+  .hidden {
+       display: none !important;
+  }
+/*font-family: 'Barlow Semi Condensed', sans-serif;
+  <link href="https://fonts.google.com/specimen/Barlow+Semi+Condensed#standard-styles" rel="stylesheet">*/

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <title>Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+  <div class="scoreBox">
+    <h1>
+      <span>ROCK</span>
+      <span>PAPER</span>
+      <span>SCISSORS</span>
+    </h1>
+    <div class="score-container-sqr">
+      <h4>Score</h4>
+      <p class="score-num">0</p>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <button class="btn-paper pick" id="paper">
+
+      <img src="./images/icon-paper.svg" alt="paper icon">
+      </span>
+    </button>
+    <button class="btn-scissorsle  pick" id="scissors">
+
+      <img src="./images/icon-scissors.svg" alt="scissors icon">
+      </span>
+    </button>
+    <button class="btn-rock pick" id="rock">
+
+      <img src="./images/icon-rock.svg" alt="icon rock">
+      </span>
+    </button>
+  </div>
+
+  <h1 class="result"></h1>
+
+
+  <button class="rules-btn"> RULES </button>
+  <div class="pop-up hide hidden">
+    <div class="pop-up-wrap">
+      <div class="pop-up-tittle">
+        <img src="./images/icon-close.svg" id="close">
+        <h5> RULES </h5>
+        <img src="./images/image-rules.svg" alt="rules">
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
